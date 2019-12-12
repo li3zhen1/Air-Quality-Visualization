@@ -23,12 +23,13 @@ var axisConfig = {
 function dateToIndex(dt) {
     return Math.round((dt - globalDate_DefautFrom) / 86400000);
 }
-function dateFormatToAxis(dt) {
+function dateFormatToAxis(dt, showDate = true) {
     var mth = dt.getMonth() + 1;
     var dtt = dt.getDate();
     if (mth < 10)
         mth = '0' + mth;
     else mth = '' + mth;
+    if (!showDate) return dt.getFullYear() + '/' + mth;
     if (dtt < 10)
         dtt = '0' + dtt;
     else dtt = '' + dtt;
@@ -154,14 +155,14 @@ var MiniMax = append_Geometry(TransCenter_Outter, "MiniMax", 0, 0)
 
 var mapSVG = TransCenter_Inner.append('image').attr('xlink:href', 'resources/beijing.svg').attr('height', '160').attr('width', '160')
     .attr('transform', 'translate(' + -80 + ',' + -80 + ')')
-var GraphTitle_plac = TransCenter_Inner.append('text').text('Beijing').attr('class','graphTitle').attr("alignment-baseline", 'middle').attr("text-anchor", 'middle')
-.attr('transform', 'translate(' + 0 + ',' + -32 + ')')
-var GraphTitle_time1 = TransCenter_Inner.append('text').text(dateFormatToAxis(globalDateFrom)).attr('class','graphSubTitle').attr("alignment-baseline", 'middle').attr("text-anchor", 'middle')
-.attr('transform', 'translate(' + 0 + ',' + 0 + ')')
-var GraphTitle_time2 = TransCenter_Inner.append('text').text('~').attr('class','graphSubTitle').attr("alignment-baseline", 'middle').attr("text-anchor", 'middle')
-.attr('transform', 'translate(' + 0 + ',' + 18 + ')')
-var GraphTitle_time3 = TransCenter_Inner.append('text').text(dateFormatToAxis(globalDateTo)).attr('class','graphSubTitle').attr("alignment-baseline", 'middle').attr("text-anchor", 'middle')
-.attr('transform', 'translate(' + 0 + ',' + 36 + ')')
+var GraphTitle_plac = TransCenter_Inner.append('text').text('Beijing').attr('class', 'graphTitle').attr("alignment-baseline", 'middle').attr("text-anchor", 'middle')
+    .attr('transform', 'translate(' + 0 + ',' + -32 + ')')
+var GraphTitle_time1 = TransCenter_Inner.append('text').text(dateFormatToAxis(globalDateFrom)).attr('class', 'graphSubTitle').attr("alignment-baseline", 'middle').attr("text-anchor", 'middle')
+    .attr('transform', 'translate(' + 0 + ',' + 0 + ')')
+var GraphTitle_time2 = TransCenter_Inner.append('text').text('~').attr('class', 'graphSubTitle').attr("alignment-baseline", 'middle').attr("text-anchor", 'middle')
+    .attr('transform', 'translate(' + 0 + ',' + 18 + ')')
+var GraphTitle_time3 = TransCenter_Inner.append('text').text(dateFormatToAxis(globalDateTo)).attr('class', 'graphSubTitle').attr("alignment-baseline", 'middle').attr("text-anchor", 'middle')
+    .attr('transform', 'translate(' + 0 + ',' + 36 + ')')
 
 function HighlightOutterGraph(city) {
     if (city == 0) {
@@ -169,21 +170,21 @@ function HighlightOutterGraph(city) {
         AQIPlot_SH.attr('class', 'AQIpath_SH')
         AQIPlot_ZS.attr('class', 'AQIpath_ZS')
         mapSVG.attr('xlink:href', 'resources/beijing.svg');
-        GraphTitle_plac.text('Beijing').attr('class','graphTitle_BJ')
+        GraphTitle_plac.text('Beijing').attr('class', 'graphTitle_BJ')
     }
     else if (city == 1) {
         AQIPlot_BJ.attr('class', 'AQIpath_BJ')
         AQIPlot_SH.attr('class', 'AQIpath_SH_Highlight')
         AQIPlot_ZS.attr('class', 'AQIpath_ZS')
         mapSVG.attr('xlink:href', 'resources/shanghai.svg');
-        GraphTitle_plac.text('Shanghai').attr('class','graphTitle_SH')
+        GraphTitle_plac.text('Shanghai').attr('class', 'graphTitle_SH')
     }
     else if (city == 2) {
         AQIPlot_BJ.attr('class', 'AQIpath_BJ')
         AQIPlot_SH.attr('class', 'AQIpath_SH')
         AQIPlot_ZS.attr('class', 'AQIpath_ZS_Highlight')
         mapSVG.attr('xlink:href', 'resources/zhoushan.svg');
-        GraphTitle_plac.text('Zhoushan').attr('class','graphTitle_ZS')
+        GraphTitle_plac.text('Zhoushan').attr('class', 'graphTitle_ZS')
     }
     GraphTitle_time1.text(dateFormatToAxis(globalDateFrom))
     GraphTitle_time3.text(dateFormatToAxis(globalDateTo))
@@ -232,14 +233,14 @@ function renderOutterPlate(parent) {
         axisConfig.innerRadius
         + axisConfig.outerRadiusSeq[axisConfig.outerRadiusSeq.length - 1] / axisConfig.scaleRatio,
         axisConfig.mainStroke, axisConfig.mainColor, 'transparent', 0, 0)
-    outerL += 36;
+    outerL += 32;
     for (var ii = initialIndex; ii <= endingIndex; ii++) {
         flg = DayPerMonth_acc.indexOf(ii);
         if ((flg >= 0 && axisConfig.axisNum < 700) || (flg >= 0 && axisConfig.axisNum >= 700 && flg % 2 == 0)) {
             dttmp.setTime(globalDateFrom.getTime() + 86400000 * (ii - initialIndex))
             rotateAngle = ((ii - initialIndex) / axisConfig.axisNum * 360)
             rotateAngle = (rotateAngle < 270 && rotateAngle > 90) ? (rotateAngle - 180) : rotateAngle
-            parent.append('text').text(dateFormatToAxis(dttmp)).attr("alignment-baseline", 'middle').attr("text-anchor", 'middle')
+            parent.append('text').text(dateFormatToAxis(dttmp,false)).attr("alignment-baseline", 'middle').attr("text-anchor", 'middle')
                 .attr('transform', 'translate(' + ((outerL) * Math.cos((ii - initialIndex) / axisConfig.axisNum * Math.PI * 2)) + ',' + ((outerL) * Math.sin((ii - initialIndex) / axisConfig.axisNum * Math.PI * 2)) + ') rotate(' + rotateAngle + ')')
         }
     }
