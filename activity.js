@@ -6,7 +6,7 @@ var AQIpath_BJ, AQIpath_SH, AQIpath_ZS;
 var axisConfig = {
     innerPlateLineColor: '#4a4a4f',
     innerPlateLine: 0.4,
-    cx: (document.body.clientWidth - 580) / 2,
+    cx: (document.body.clientWidth - 500) / 2,
     cy: (document.documentElement.clientHeight - 110) / 2,
     mainStroke: 1.5,
     subStroke: 1,
@@ -388,7 +388,7 @@ function changeMainCity(k) {
     renderInnerGraph(HighlightCityNo, dateToIndex(globalDateFrom), dateToIndex(globalDateTo));
 }
 window.onresize = function () {
-    axisConfig.cx = (document.body.clientWidth - 580) / 2;
+    axisConfig.cx = (document.body.clientWidth - 500) / 2;
     axisConfig.cy = (document.documentElement.clientHeight - 110) / 2;
     TransCenter_Outter.attr('transform', 'translate(' + axisConfig.cx + ',' + axisConfig.cy + ')')
     TransCenter_Inner.attr('transform', 'translate(' + axisConfig.cx + ',' + axisConfig.cy + ')')
