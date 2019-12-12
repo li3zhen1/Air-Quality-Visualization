@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script src="lib/d3.v4.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <title>Air Quality Visualization</title>
+</head>
+<style>
+</style>
+<body class="Body">
+  <svg width="100%" height="100%" id="Canvas" class="mainCanvas">
+    <defs>
+      <radialGradient id="radial-bj" fx="50%" fy="50%" cx="50%" cy="50%" r="50%">
+        <stop offset="62%" stop-color="#58e7b8" stop-opacity="0.43" />
+        <stop offset="100%" stop-color="#38b4a6" stop-opacity="1" />
+      </radialGradient>
+      <radialGradient id="radial-sh" fx="50%" fy="50%" cx="50%" cy="50%" r="50%">
+        <stop offset="72%" stop-color="#fcaa3f" stop-opacity="0.5" />
+        <stop offset="100%" stop-color="#e76c33" stop-opacity="1" />
+      </radialGradient>
+      <radialGradient id="radial-zs" fx="50%" fy="50%" cx="50%" cy="50%" r="50%">
+        <stop offset="75%" stop-color="#90f2ff" stop-opacity="0.5" />
+        <stop offset="100%" stop-color="#5fb5ff" stop-opacity="1" />
+      </radialGradient>
+    </defs>
+  </svg>
+  <div class="rightPanel">
+    <div class="title">Air Quality Visualization</div>
+    <div class="seperator"></div>
+    <div class="subCaption">Time Period</div>
+    <div>
+      <div id="app"></div>
+    </div>
+    <div class="seperator"></div>
+
+    <div class="subCaption">City</div>
+    <div class="ButtonContainer">
+      <button id="BeijingButton" class="CityButton BeijingButtonSelected" onclick="changeMainCity(0)">Beijing</button>
+      <button id="ShanghaiButton" class="CityButton ShanghaiButton" onclick="changeMainCity(1)">Shanghai</button>
+      <button id="ZhoushanButton" class="CityButton ZhoushanButton" onclick="changeMainCity(2)">Zhoushan</button>
+    </div>
+    <div class="seperator"></div>
+    <div class="subCaption">Guidance</div>
+    <div class="GuidanceContainer">
+      <div>AQI Daily Average</div>
+      <div>AQI Monthly Maximum-Minimum</div>
+      <div>Pollutants standards</div>
+      <div class="rightInstanceContainer">
+        <div class="rightAQI1"><img src="resources/dash1.svg"></div>
+        <div class="rightAQI2">
+          <img src="resources/dash2.svg">
+        </div>
+        <div class="rightAQI3"><img src="resources/dash3.svg"></div>
+      </div>
+      <img style="margin-top:4px;margin-bottom:-20px" src="resources/dash4.svg">
+    </div>
+  </div>
+  <script src="activity.js"></script>
+  <script type="text/javascript" src="bundle.js"></script>
+</body>
+
+</html>

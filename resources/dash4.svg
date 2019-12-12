@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 480 180" enable-background="new 0 0 480 180" xml:space="preserve">
+<rect x="0" fill="#F17E65" width="44" height="150"/>
+<line fill="#FFFFFF" stroke="#4B4A50" stroke-miterlimit="10" x1="0" y1="30" x2="44" y2="30"/>
+<line fill="#FFFFFF" stroke="#4B4A50" stroke-miterlimit="10" x1="0" y1="60" x2="44" y2="60"/>
+<line fill="#FFFFFF" stroke="#4B4A50" stroke-miterlimit="10" x1="0" y1="90" x2="44" y2="90"/>
+<g>
+	<line fill="#FFFFFF" x1="0" y1="120" x2="44" y2="120"/>
+	<g>
+		<line fill="none" stroke="#4B4A50" stroke-width="2" stroke-miterlimit="10" x1="0" y1="120" x2="2.5" y2="120"/>
+		
+			<line fill="none" stroke="#4B4A50" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="5.5714,5.5714" x1="8.07" y1="120" x2="38.71" y2="120"/>
+		<line fill="none" stroke="#4B4A50" stroke-width="2" stroke-miterlimit="10" x1="41.5" y1="120" x2="44" y2="120"/>
+	</g>
+</g>
+<rect x="109" fill="#E5BA70" width="44" height="150"/>
+<line fill="#FFFFFF" stroke="#4B4A50" stroke-miterlimit="10" x1="109" y1="30" x2="153" y2="30"/>
+<line fill="#FFFFFF" stroke="#4B4A50" stroke-miterlimit="10" x1="109" y1="60" x2="153" y2="60"/>
+<line fill="#FFFFFF" stroke="#4B4A50" stroke-miterlimit="10" x1="109" y1="90" x2="153" y2="90"/>
+<g>
+	<line fill="#FFFFFF" x1="109" y1="120" x2="153" y2="120"/>
+	<g>
+		<line fill="none" stroke="#4B4A50" stroke-width="2" stroke-miterlimit="10" x1="109" y1="120" x2="111.5" y2="120"/>
+		
+			<line fill="none" stroke="#4B4A50" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="5.5714,5.5714" x1="117.07" y1="120" x2="147.71" y2="120"/>
+		<line fill="none" stroke="#4B4A50" stroke-width="2" stroke-miterlimit="10" x1="150.5" y1="120" x2="153" y2="120"/>
+	</g>
+</g>
+<rect x="218" fill="#B0A091" width="44" height="150"/>
+<line fill="#FFFFFF" stroke="#4B4A50" stroke-miterlimit="10" x1="218" y1="30" x2="262" y2="30"/>
+<line fill="#FFFFFF" stroke="#4B4A50" stroke-miterlimit="10" x1="218" y1="60" x2="262" y2="60"/>
+<line fill="#FFFFFF" stroke="#4B4A50" stroke-miterlimit="10" x1="218" y1="90" x2="262" y2="90"/>
+<g>
+	<line fill="#FFFFFF" x1="218" y1="120" x2="262" y2="120"/>
+	<g>
+		<line fill="none" stroke="#4B4A50" stroke-width="2" stroke-miterlimit="10" x1="218" y1="120" x2="220.5" y2="120"/>
+		
+			<line fill="none" stroke="#4B4A50" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="5.5714,5.5714" x1="226.07" y1="120" x2="256.71" y2="120"/>
+		<line fill="none" stroke="#4B4A50" stroke-width="2" stroke-miterlimit="10" x1="259.5" y1="120" x2="262" y2="120"/>
+	</g>
+</g>
+<rect x="327" fill="#97BBA1" width="44" height="150"/>
+<line fill="#FFFFFF" stroke="#4B4A50" stroke-miterlimit="10" x1="327" y1="30" x2="371" y2="30"/>
+<line fill="#FFFFFF" stroke="#4B4A50" stroke-miterlimit="10" x1="327" y1="60" x2="371" y2="60"/>
+<line fill="#FFFFFF" stroke="#4B4A50" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="5" x1="327" y1="90" x2="371" y2="90"/>
+<line fill="#FFFFFF" stroke="#4B4A50" stroke-miterlimit="10" x1="327" y1="120" x2="371" y2="120"/>
+<rect x="436" fill="#938FA7" width="44" height="150"/>
+<line fill="#FFFFFF" stroke="#4B4A50" stroke-miterlimit="10" x1="436" y1="30" x2="480" y2="30"/>
+<line fill="#FFFFFF" stroke="#4B4A50" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="5" x1="436" y1="60" x2="480" y2="60"/>
+<line fill="#FFFFFF" stroke="#4B4A50" stroke-miterlimit="10" x1="436" y1="90" x2="480" y2="90"/>
+<line fill="#FFFFFF" stroke="#4B4A50" stroke-miterlimit="10" x1="436" y1="120" x2="480" y2="120"/>
+<text transform="matrix(1 0 0 1 0.9968 169.5792)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">PM2.5</text>
+<text transform="matrix(1 0 0 1 114.1971 169.5788)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">PM10</text>
+<text transform="matrix(1 0 0 1 227.3978 169.5784)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">SO2</text>
+<text transform="matrix(1 0 0 1 336.3981 169.578)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">NO2</text>
+<text transform="matrix(1 0 0 1 449.5988 169.5789)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">CO</text>
+<g>
+	<text transform="matrix(1 0 0 1 13.5988 140.0909)" fill="#FFFFFF" font-family="Roboto Mono" font-size="14px">75</text>
+	<text transform="matrix(1 0 0 1 9.3982 110.0915)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">150</text>
+	<text transform="matrix(1 0 0 1 9.3983 80.0913)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">225</text>
+	<text transform="matrix(1 0 0 1 9.398 50.0912)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">300</text>
+	<text transform="matrix(1 0 0 1 9.3984 20.0912)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">375</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 118.3978 140.0911)" fill="#FFFFFF" font-family="Roboto Mono" font-size="14px">100</text>
+	<text transform="matrix(1 0 0 1 118.398 110.0917)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">200</text>
+	<text transform="matrix(1 0 0 1 118.3981 80.0915)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">300</text>
+	<text transform="matrix(1 0 0 1 118.3978 50.0914)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">400</text>
+	<text transform="matrix(1 0 0 1 118.3981 20.0914)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">500</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 231.5983 140.0911)" fill="#FFFFFF" font-family="Roboto Mono" font-size="14px">20</text>
+	<text transform="matrix(1 0 0 1 231.5984 110.0917)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">40</text>
+	<text transform="matrix(1 0 0 1 231.5986 80.0915)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">60</text>
+	<text transform="matrix(1 0 0 1 231.5982 50.0914)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">80</text>
+	<text transform="matrix(1 0 0 1 227.3979 20.0914)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">100</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 340.5984 140.0912)" fill="#FFFFFF" font-family="Roboto Mono" font-size="14px">40</text>
+	<text transform="matrix(1 0 0 1 340.5986 110.0919)" fill="#FFFFFF" font-family="Roboto Mono" font-size="14px">80</text>
+	<text transform="matrix(1 0 0 1 336.398 80.0917)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">120</text>
+	<text transform="matrix(1 0 0 1 336.3977 50.0916)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">160</text>
+	<text transform="matrix(1 0 0 1 336.398 20.0916)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">200</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 453.7993 140.0914)" fill="#FFFFFF" font-family="Roboto Mono" font-size="14px">1</text>
+	<text transform="matrix(1 0 0 1 453.7995 110.0921)" fill="#FFFFFF" font-family="Roboto Mono" font-size="14px">2</text>
+	<text transform="matrix(1 0 0 1 453.7996 80.0918)" fill="#FFFFFF" font-family="Roboto Mono" font-size="14px">3</text>
+	<text transform="matrix(1 0 0 1 453.7993 50.0918)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">4</text>
+	<text transform="matrix(1 0 0 1 453.7996 20.0918)" fill="#4B4A50" font-family="Roboto Mono" font-size="14px">5</text>
+</g>
+</svg>
