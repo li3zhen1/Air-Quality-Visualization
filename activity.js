@@ -211,7 +211,7 @@ function calcMinimax() {
 
 
 function renderOutterPlate(parent) {
-    var delta = (axisConfig.axisNum > 365) ? 30 : 1;
+    var delta = (axisConfig.axisNum > 367) ? 30 : 1;
     outerL = axisConfig.innerRadius +
         axisConfig.outerRadiusSeq[axisConfig.outerRadiusSeq.length - 1] / axisConfig.scaleRatio;
     var initialIndex = dateToIndex(globalDateFrom);
@@ -251,7 +251,7 @@ function renderOutterPlate(parent) {
     }
 }
 function renderInnerPlate(parent) {
-    var delta = (axisConfig.axisNum > 365) ? 30 : 1;
+    var delta = (axisConfig.axisNum > 367) ? 30 : 1;
     for (var i = 0; i < axisConfig.axisNum; i += delta) {
         append_Radius_Line(
             parent, "radiusLine", axisConfig.innerPlateLine, axisConfig.innerPlateLineColor,
